@@ -35,9 +35,6 @@ const mintNFT = (name, senderAddress, recieverAddress, bling)=> {
 }
 
 
-mintNFT("Bob","0x4F77E56dfA40990349e1078e97AC3Eb479e0dAd8","0x4G77E56dfA40990349e1078e97AC3Eb479e0dCc6","Fossil Watch")
-mintNFT("Alice","0x4R77E56dfA40990349e1078e97AC3Eb479e0dAc6","0x4Q77E56dfA40990349e1078e97AC3Eb479e0dFg9","Necklace")
-mintNFT("Chad","0x4L77E56dfA40990349e1078e97AC3Eb479e0dGx7","0x4T77E56dfA40990349e1078e97AC3Eb479e0dRt1","Beige Hat")
 
 
 
@@ -63,5 +60,11 @@ function getTotalSupply() {
 
 // call your functions below this line
 
+mintNFT("Bob","0x4F77E56dfA40990349e1078e97AC3Eb479e0dAd8","0x4G77E56dfA40990349e1078e97AC3Eb479e0dCc6","Fossil Watch")
+mintNFT("Alice","0x4R77E56dfA40990349e1078e97AC3Eb479e0dAc6","0x4Q77E56dfA40990349e1078e97AC3Eb479e0dFg9","Necklace")
+mintNFT("Chad","0x4L77E56dfA40990349e1078e97AC3Eb479e0dGx7","0x4T77E56dfA40990349e1078e97AC3Eb479e0dRt1","Beige Hat")
+
+
 listNFTs()
+
 getTotalSupply()
