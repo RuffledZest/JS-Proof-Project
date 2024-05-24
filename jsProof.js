@@ -47,11 +47,11 @@ mintNFT("Chad","0x4L77E56dfA40990349e1078e97AC3Eb479e0dGx7","0x4T77E56dfA4099034
 
 function listNFTs () {
     for(let i in NFTs){
-        console.log("ID :\t\t"+NFTs[i].id)
-        console.log("name :\t\t"+NFTs[i].name)
+        console.log("ID :\t\t\t\t"+NFTs[i].id)
+        console.log("name :\t\t\t\t"+NFTs[i].name)
         console.log("Sender Address :\t"+NFTs[i].senderAddress)
-        console.log("Reciever Address :"+NFTs[i].recieverAddress)
-        console.log("Bling :\t\t"+NFTs[i].bling+"\n")
+        console.log("Reciever Address :\t"+NFTs[i].recieverAddress)
+        console.log("Bling :\t\t\t\t"+NFTs[i].bling+"\n")
     }
 }
 
