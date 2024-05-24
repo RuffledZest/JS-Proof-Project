@@ -20,13 +20,13 @@ const NFTs = []  //This NFTs array will store the Minted NFT along with it's met
 // and store it in the variable above.
 
 
-const mintNFT = (name, eyeColor, shirtType, bling )=> {
+const mintNFT = (name, senderAddress, recieverAddress, bling)=> {
 
     const NFT ={
         "id": NFTs.length+1,
         "name":name,
-        "eyeColor":eyeColor,
-        "shirtType":shirtType,
+        "senderAddress":senderAddress,
+        "recieverAddress":recieverAddress,
         "bling":bling
     }
 
@@ -35,9 +35,9 @@ const mintNFT = (name, eyeColor, shirtType, bling )=> {
 }
 
 
-mintNFT("Bob","Brown","Over Coat","Fossil Watch")
-mintNFT("Alice","Green","Scarlet Gown","Necklace")
-mintNFT("Chad","Black","T-Shirt","Beige Hat")
+mintNFT("Bob","0x4F77E56dfA40990349e1078e97AC3Eb479e0dAd8","0x4G77E56dfA40990349e1078e97AC3Eb479e0dCc6","Fossil Watch")
+mintNFT("Alice","0x4R77E56dfA40990349e1078e97AC3Eb479e0dAc6","0x4Q77E56dfA40990349e1078e97AC3Eb479e0dFg9","Necklace")
+mintNFT("Chad","0x4L77E56dfA40990349e1078e97AC3Eb479e0dGx7","0x4T77E56dfA40990349e1078e97AC3Eb479e0dRt1","Beige Hat")
 
 
 
@@ -49,8 +49,8 @@ function listNFTs () {
     for(let i in NFTs){
         console.log("ID :\t\t"+NFTs[i].id)
         console.log("name :\t\t"+NFTs[i].name)
-        console.log("Eye Color :\t"+NFTs[i].eyeColor)
-        console.log("Shirt Type :"+NFTs[i].shirtType)
+        console.log("Sender Address :\t"+NFTs[i].senderAddress)
+        console.log("Reciever Address :"+NFTs[i].recieverAddress)
         console.log("Bling :\t\t"+NFTs[i].bling+"\n")
     }
 }
@@ -59,10 +59,6 @@ function listNFTs () {
 function getTotalSupply() {
     console.log("The total number of NFTs minted: "+ NFTs.length)
 }
-
-
-
-
 
 
 // call your functions below this line
